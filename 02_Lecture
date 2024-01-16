@@ -1,0 +1,62 @@
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+    int age=sc.nextInt();
+    String s=sc.next();
+    if(age>23 && s.equals("Male")){
+        System.out.println("You can vote");
+    }
+    else if(age>18 && s.equals("Female")){
+        System.out.println("You can vote");
+    }
+    else{
+        System.out.println("You can't vote");
+    }
+
+    }
+}
+
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+   
+        Scanner sc=new Scanner(System.in);
+        int  s=sc.nextInt();
+        for(int i=1;i<=10;i++){
+            System.out.println(s+"*"+i+"="+s*i);
+        }
+        
+    }
+}
+
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+   
+        Scanner sc=new Scanner(System.in);
+        int  s=sc.nextInt();
+        int i=1;
+        while(i<=10){
+            System.out.println(s+"*"+i+"="+s*i);
+            i++;
+        }
+        
+    }
+}
+
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+   
+        Scanner sc=new Scanner(System.in);
+        int  s=sc.nextInt();
+        int i=1;
+        do{
+           System.out.println(s+"*"+i+"="+s*i);
+            i++;  
+        }
+        while(i<=10);
+            
+    }
+}
