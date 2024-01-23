@@ -1,0 +1,148 @@
+
+1)INTERSECTION IN TWO ARRAYS
+
+import java.util.*;
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int size=sc.nextInt();
+        int[] arr1=new int[size];
+        int[] arr2=new int[size];
+        for(int i=0;i<size;i++){
+           arr1[i]=sc.nextInt();
+        }
+        for(int i=0;i<size;i++){
+           arr2[i]=sc.nextInt();
+        }
+        for(int i=0;i<size;i++){
+            for(int j=0;j<size;j++){
+                if(arr1[i]==arr2[j]){
+                    System.out.print(arr1[i]+" ");
+                }
+            }
+        }
+    }
+}
+
+2)MAXIMUMUM AND MINIMUMU ELEMENT IN AN ARRAY
+
+import java.util.*;
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int size=sc.nextInt();
+        int[] arr1=new int[size];
+       
+        for(int i=0;i<size;i++){
+           arr1[i]=sc.nextInt();
+        }
+        int min=Integer.MAX_VALUE;
+        int max=Integer.MIN_VALUE;
+        for(int i=0;i<size;i++){
+            if(arr1[i]<min){
+                min=arr1[i];
+            }
+            if(arr1[i]>max){
+                max=arr1[i];
+            }
+            
+        }
+        System.out.println("Minimum value is: "+ min);
+        System.out.println("Maximum value is: "+ max);
+    }
+}
+
+
+3)LINEAR SEARCH
+
+import java.util.*;
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int size=sc.nextInt();
+        boolean b=false;
+        int[] arr1=new int[size];
+       
+        for(int i=0;i<size;i++){
+           arr1[i]=sc.nextInt();
+        }
+        int target=sc.nextInt();
+       
+        for(int i=0;i<size;i++){
+           if(arr1[i]==target){
+               b=true;
+               System.out.println("Found");
+               break;
+               
+           }
+            
+        }
+        if(b==false){
+            System.out.println("-1");
+        }
+      
+    }
+}
+
+
+4)SUM OF ARRAY
+
+import java.util.*;
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int size=sc.nextInt();
+     
+        int[] arr1=new int[size];
+       
+        for(int i=0;i<size;i++){
+           arr1[i]=sc.nextInt();
+        }
+        int sum=0;
+       
+        for(int i=0;i<size;i++){
+          sum+=arr1[i];
+        }
+        
+            System.out.println(sum);
+       
+      
+    }
+}
+
+
+5)EVEN_ELEMENT_FROM_ARRAY
+
+import java.util.*;
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int size=sc.nextInt();
+     
+        int[] arr1=new int[size];
+       
+        for(int i=0;i<size;i++){
+           arr1[i]=sc.nextInt();
+        }
+    for(int i=0;i<size;i++){
+          if(arr1[i]%2==0){
+              System.out.print(arr1[i]+" ");
+          }
+        }
+}
+}
+
+
+
+
+
+
+
+
+
+
