@@ -1,0 +1,102 @@
+OOPS CONCEPT
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+class Demo{
+    public int x;
+    private int z;
+    public static int y;
+    public void fun(){
+        System.out.println("Value of x for this object is "+x);
+    }
+    // Setter function for private settig value
+    public void setX(int val){
+        z=val;
+    }
+    // Getter and setter should be always public
+    // Getter funtion for private member we printing it
+    public void getZ(){
+        System.out.println(z);
+    }
+    
+}
+
+class HelloWorld {
+    public static void main(String[] args) {
+        // Demo d1;
+        Demo d1=new Demo();
+        d1.x=133;
+        System.out.println(d1.x);
+        // d1.z=100;
+        d1.setX(100);
+        // d1.fun();
+        d1.getZ();
+        
+    }
+}
+
+
+
+
+import java.util.*;
+class Demo{
+    public int x;
+    private int z;
+    public static int y;
+    public void fun(){
+        System.out.println("Value of x for this object is "+x);
+    }
+    // Setter function for private settig value
+    public void setX(int val,int val1){
+        z=val;
+        y=val1;
+    }
+    // Getter and setter should be always public
+    // Getter funtion for private member we printing it
+    public void getZ(){
+        System.out.println(z);
+    }
+    
+}
+
+class HelloWorld {
+    public static void main(String[] args) {
+        Demo.y=897;
+      System.out.println(Demo.y);
+       
+        
+    }
+}
+
+
+
+
+
+2-D
+
+import java.util.*;
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int m=sc.nextInt();
+        int[][] arr=new int[n][m];
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                arr[i][j]=sc.nextInt();
+            }
+        }
+        System.out.println(arr.length);
+        System.out.println(arr[0].length);
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                System.out.print(arr[i][j]+" ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+
