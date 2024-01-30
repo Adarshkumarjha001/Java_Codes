@@ -1,0 +1,125 @@
+* GETTER//SETTER
+
+import java.util.*;
+import java.util.Scanner;
+class demo{
+    private int x;
+    public int y;
+    void set_x(int val){
+        x=val;
+    }
+    void print_x(){
+        System.out.println("value of x: "+x);
+    }
+    void printdetails(){
+         System.out.println("value of x: "+x);
+        System.out.println("Value of y: "+y);
+    }
+   
+    
+}
+class HelloWorld {
+    public static void main(String[] args) {
+        demo obj1=new demo();
+        obj1.y=100;
+        obj1.set_x(200);
+        obj1.printdetails();
+        
+        
+    }
+}
+
+
+
+import java.util.*;
+import java.util.Scanner;
+class demo{
+    private int x;
+    public int y;
+    private void set_x(int val){
+        x=val;
+    }
+    void print_x(int x){
+        set_x(x);
+        System.out.println("value of x: "+x);
+    }
+    void printdetails(){
+         System.out.println("value of x: "+x);
+        System.out.println("Value of y: "+y);
+    }
+   
+    
+}
+class HelloWorld {
+    public static void main(String[] args) {
+        demo obj1=new demo();
+        obj1.y=100;
+        // obj1.set_x(200);
+        obj1.print_x(200);
+        
+        
+    }
+}
+
+* CONSTRUCTORS AND ITS TYPES
+
+
+import java.util.*;
+import java.util.Scanner;
+class Demo{
+    public int x;
+    public int y;
+    
+    Demo(int val){
+        x=val;
+        System.out.println("bye");
+    }
+    Demo(int val1){
+        y=val1;
+        System.out.println("bye2");
+    }
+    Demo(int val1,int val2){
+        y=val1;
+        x=val2;
+    }
+    Demo(){
+        
+    }
+}
+class HelloWorld {
+    public static void main(String[] args) {
+       Demo obj1=new Demo();
+       Demo objj2=new Demo(12);
+       Demo obj3=new Demo(3,6);
+    }
+}
+
+
+
+
+import java.util.*;
+import java.util.Scanner;
+
+class HelloWorld {
+    static void fun(int x){
+          System.out.println("X: " +x);
+      }
+      static void fun(){
+          System.out.println("Bye");
+      }
+      static void fun(int x,int y){
+          System.out.println("x: "+x);
+          System.out.println("y: "+y);
+      }
+       static int fun(int x,int y,int z){
+          System.out.println("x: "+x);
+          System.out.println("y: "+y);
+              System.out.println("z: "+z);
+              return 0;
+      }
+    public static void main(String[] ar) {
+      fun(2);
+      fun(4,7);
+      fun(1,2,3);
+    }
+}
