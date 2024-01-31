@@ -1,0 +1,232 @@
+SINGLE LEVEL
+
+import java.util.*;
+import java.util.Scanner;
+class A{
+    int age;
+    private void funprivate(){
+        System.out.println("i am a private function");
+    }
+    public void fun(){
+        System.out.println("Hellow ");
+        funprivate();
+    }
+}
+class B extends A{
+    public void fun2(){
+        System.out.println("Welcome Everyone");
+        fun();
+    }
+    // Maanlo ki Class A as it is copy and paste hogay haii yaha pe class A ke sare public and private member jo haii wo class B me chala jaega 
+}
+class HelloWorld {
+    public static void main(String[] args) {
+       A obj1=new A();
+       B obj2= new B();
+       
+    //   obj2.fun2();
+       obj2.fun2();
+    }
+}
+
+
+
+// MULTILEVEL
+import java.util.*;
+import java.util.Scanner;
+class A{
+    int age;
+    private void funprivate(){
+        System.out.println("i am a private function");
+    }
+    public void fun(){
+        System.out.println("Hellow ");
+        funprivate();
+    }
+}
+class B extends A{
+    public void fun2(){
+        System.out.println("Welcome Everyone");
+        // fun();
+    }
+    // Maanlo ki Class A as it is copy and paste hogay haii yaha pe class A ke sare public and private member jo haii wo class B me chala jaega 
+}
+class C extends B{
+    public void funC(){
+        System.out.println("i am from C class");
+    }
+}
+class HelloWorld {
+    public static void main(String[] args) {
+       A obj1=new A();
+       B obj2= new B();
+       
+    //   obj2.fun2();
+      obj1.fun();
+      obj2.fun2();
+    //   obj1.fun();
+    
+       C  obj3=new C();
+       obj3.fun();
+       obj3.fun2();
+       obj3.funC();
+       
+    }
+}
+
+
+
+
+// Hierarichal inheritance
+import java.util.*;
+import java.util.Scanner;
+class A{
+    int age;
+    private void funprivate(){
+        System.out.println("i am a private function");
+    }
+    public void fun(){
+        System.out.println("I am A class");
+        funprivate();
+    }
+}
+class B extends A{
+    public void fun2(){
+        System.out.println("ia m class B");
+        // fun();
+    }
+    // Maanlo ki Class A as it is copy and paste hogay haii yaha pe class A ke sare public and private member jo haii wo class B me chala jaega 
+}
+class C extends A{
+    public void funC(){
+        System.out.println("i am from C class");
+    }
+}
+class HelloWorld {
+    public static void main(String[] args) {
+       A obj1=new A();
+       B obj2= new B();
+       
+    //   obj2.fun2();
+      obj1.fun();
+      obj2.fun2();
+    //   obj1.fun();
+    
+       C  obj3=new C();
+       obj3.fun();
+       obj3.fun2();
+       obj3.funC();
+       
+    }
+}
+
+
+
+
+// Hierarichal inheritance
+// JAVA doesnot support multiple  and hybrid inheritance crete ambiguity
+import java.util.*;
+import java.util.Scanner;
+class A{
+    int age;
+    private void funprivate(){
+        System.out.println("i am a private function");
+    }
+    public A(){
+         System.out.println("AA");
+    }
+    public void fun(){
+        System.out.println("I am A class");
+        funprivate();
+    }
+}
+class B extends A{
+    public void fun2(){
+        System.out.println("ia m class B");
+        // fun();
+    }
+     public B(){
+         System.out.println("BB");
+    }
+    // Maanlo ki Class A as it is copy and paste hogay haii yaha pe class A ke sare public and private member jo haii wo class B me chala jaega 
+}
+class C extends B{
+    public void funC(){
+        System.out.println("CC");
+    }
+    public C(){
+        System.out.println("CC");
+    }
+}
+class HelloWorld {
+    public static void main(String[] args) {
+    //   A obj1=new A();
+       C obj2= new C();
+       
+    //   obj2.fun2();
+    //   obj1.fun();
+    //   obj2.fun2();
+    //   obj1.fun();
+    
+    //   C  obj3=new C();
+    //   obj3.fun();
+    //   obj3.fun2();
+    //   obj3.funC();
+       
+    }
+}
+
+
+
+
+
+
+import java.util.*;
+import java.util.Scanner;
+class A{
+    int age;
+    
+    public A(int val){
+        age=val;
+         System.out.println("AA");
+        
+    }
+    public void fun(){
+        System.out.println("I am A class");
+      
+    }
+}
+class B extends A{
+    int age2;
+    public void fun(){
+        System.out.println("i am class B");
+      
+    }
+    public B(int val2,int val3){
+         super(val3);
+         age2=val2;
+         System.out.println("BB");
+         
+    }
+    
+}
+class C extends B{
+    int age3;
+    
+   
+    public C(int val,int val2,int val3){
+        super(val2,val3);
+        age3=val3;
+        System.out.println("CC");
+    }
+}
+class HelloWorld {
+    public static void main(String[] args) {
+      C obj1=new C(1,2,3);
+      System.out.println(obj1.age3);
+      System.out.println(obj1.age2);
+        System.out.println(obj1.age);
+
+       
+    }
+}
