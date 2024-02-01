@@ -1,0 +1,121 @@
+import java.io.*;
+class Demo{
+    public int x;
+    public int y;
+    void fun(){
+        System.out.println("Hellow");
+    }
+    void fun(int val){
+        for(int i=0;i<val;i++){
+            System.out.println("bye bye");
+        }
+    }
+    void fun(int val,String s){
+        for(int i=0;i<val;i++){
+            System.out.println(s);
+        }
+    }
+}
+class HelloWorld {
+    public static void main(String[] args) {
+        Demo obj1=new Demo();
+        obj1.fun(4,"Adarsh");
+    }
+}
+
+
+
+
+
+
+import java.io.*;
+class Demo{
+    public int x;
+    public int y;
+    // int fun(){
+    //     System.out.println("Hellow");
+    // }
+    // compiler will get confused which one to execute
+    void fun(){
+        System.out.println("Hellow");
+    }
+    int fun(int val){
+        for(int i=0;i<val;i++){
+            System.out.println("bye bye");
+        }
+        return 0;
+    }
+    void fun(int val,String s){
+        for(int i=0;i<val;i++){
+            System.out.println(s);
+        }
+    }
+}
+class HelloWorld {
+    public static void main(String[] args) {
+        Demo obj1=new Demo();
+        obj1.fun(4,"Adarsh");
+    }
+}
+
+
+
+
+import java.io.*;
+class Demo{
+    public int x;
+    public int y;
+    // int fun(){
+    //     System.out.println("Hellow");
+    // }
+    // compiler will get confused which one to execute
+    void fun(){
+        System.out.println("Hellow");
+    }
+    void fun(int val){
+        
+            System.out.println(val);
+      
+    }
+    void fun(int val,int val2){
+       
+            System.out.println(val * val2);
+        
+    }
+    void fun(int val,int val2,int val3){
+       
+            System.out.println(val * val2 * val3);
+        
+    }
+}
+class HelloWorld {
+    public static void main(String[] args) {
+        Demo obj1=new Demo();
+        obj1.fun(4,5,8);
+    }
+}
+
+
+
+
+import java.io.*;
+class D{
+    
+    void fun(){
+        System.out.println("Hellow");
+    }
+}
+class A extends D{
+    void fun(){
+        System.out.println("Bye Bye");
+    }
+}
+    
+class HelloWorld {
+    public static void main(String[] args) {
+        // D obj1=new D();
+        // obj1.fun();
+         A obj1=new A();
+        obj1.fun();
+    }
+}
