@@ -1,0 +1,49 @@
+// import java.util.*;
+// import java.util.Scanner;
+// class LPU{
+//     public int age;
+//     private int roll;
+//     private String name;
+//     LPU(int x,int y,String s){
+//         age=x;
+//         roll=y;
+//         name=s;
+//     }
+//     void get_details(){
+//         System.out.print("Age is "+ age + "Roll nu is: " + roll+"name is: "+name);
+//     }
+// }
+// class HelloWorld {
+//     public static void main(String[] args) {
+//         LPU obj=new LPU(32,2004,"Adarsh");
+//         // obj.set_details(32,2004,"Adarsh");
+//         obj.get_details();
+//     }
+    
+// }
+
+
+
+// import java.util.*;
+// import java.util.Scanner;
+// class LPU{
+// public int age;
+// private int roll;
+// private String name;
+// void set_details(int x,int y,String s){
+// age=x;
+// roll=y;
+// name=s;
+// }
+// void get_details(){
+// System.out.print("Age is "+ age + "Roll nu is: " + roll+"name is: "+name);
+// }
+// }
+// class HelloWorld {
+// public static void main(String[] args) {
+// LPU obj=new LPU();
+// obj.set_details(32,2004,"Adarsh");
+// obj.get_details();
+// }
+
+// }
