@@ -1,0 +1,41 @@
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        // int n=prices.size();
+        // int max=0;
+        // for(int i=0;i<n;i++){
+        //     for(int j=i+1;j<n;j++){
+                
+        //             int profit=prices[j]-prices[i];
+        //             if(profit>max){
+        //                 max=profit;
+        //             }
+              
+
+        //     }
+
+        // }
+        // return max;
+        int size=prices.size();
+         int right[size];
+	   right[size-1] = prices[size-1];
+	   for(int i=size-2;i>=0;i--){
+	       if(array[i] > right[i+1]){
+	           right[i] = array[i];
+	       }else{
+	           right[i] = right[i+1];
+	       }
+	   }
+	  int max=0;
+      for(int i=0;i<size;i++){
+          int pro=prices[i]-right[i];
+          if(pro>max){
+              max=pro;
+          }
+      }
+return max;
+        
+    }
+};
+
+2nd Adavance part of same qn
