@@ -1,0 +1,46 @@
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int sum=0;
+        for(int i=1;i<=n;i++){
+            if(n%i==0){
+                sum+=i;
+               
+            }
+        }
+        int a=sum-n;
+        System.out.println(a);
+        if(n==a){
+            System.out.println("It Is a perfect Square");
+        }
+        else{
+            System.out.println("Not Perfect Square");
+        }
+    }
+}
+
+
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+      int size=sc.nextInt();
+      System.out.print(1+" ");
+       for(int i=1;i<=size;i++){
+           int sum=0;
+           for(int j=1;j<=i;j++){
+               if(i%j==0){
+                   sum+=j;
+               }
+           }
+           int b=sum-i;
+           if(b==i){
+               System.out.print(i+" ");
+           }
+       }
+    }
+}
+
+
