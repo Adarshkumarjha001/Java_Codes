@@ -1,0 +1,79 @@
+MULTILEVEL INHERITANCE 
+
+class calc{
+    public int add(int r1,int r2){
+        return r1+r2;
+    }
+    public int sub(int r1,int r2){
+        return r1-r2;
+    }
+}
+class Adavccalc extends calc{
+    public int mul(int r1,int r2){
+        return r1*r2;
+    }
+    public int div(int r1,int r2){
+        return r1/r2;
+    }
+}
+class veryAdvanccalc extends Adavccalc{
+public double power(int n,int m){
+    return Math.pow(n,m);
+}
+}
+public class Main
+{
+	public static void main(String[] args) {
+	       veryAdvanccalc obj=new veryAdvanccalc();
+	       int a=obj.add(9,5);
+	       int b=obj.sub(5,3);
+	       int c=obj.mul(8,5);
+	       int d=obj.div(5,3);
+	       double e=obj.power(3,4);
+	   
+	       System.out.println(a+" "+b+" "+c+" "+d+" "+e);
+	}
+}
+
+
+
+MULTIPLE  INHERITANCE WILL NOT WORK IN JAVA IT THROWS AN ERRROR
+
+
+
+THIS && SUPER
+
+
+
+class A{
+    public A(){
+        super();
+        System.out.println("I am in class A");
+    }
+    public A(int n){
+        super();
+        System.out.println("In A int");
+    }
+    
+}
+class B extends A{
+   public B(){
+       super();
+        System.out.println("I am in B class");
+    }
+    public B(int n){
+        this();
+        System.out.println("In B int");
+    }
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+// 		B obj=new B(5);
+	B obj=new B(5);
+	}
+}
+
+
+
