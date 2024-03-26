@@ -1,0 +1,48 @@
+class calc{
+    public int add(int r1,int r2){
+        return r1+r2;
+    }
+    public int sub(int r1,int r2){
+        return r1-r2;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	       calc obj=new calc();
+	       int a=obj.add(2,5);
+	       int b=obj.sub(5,3);
+	       System.out.println(a+" "+b);
+	}
+}
+
+
+INHERITANCE USING EXTENDS KEYWORDS  SINGLE INHERITANCE
+
+class calc{
+    public int add(int r1,int r2){
+        return r1+r2;
+    }
+    public int sub(int r1,int r2){
+        return r1-r2;
+    }
+}
+class Adavccalc extends calc{
+    public int mul(int r1,int r2){
+        return r1*r2;
+    }
+    public int div(int r1,int r2){
+        return r1/r2;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	       Adavccalc obj=new Adavccalc();
+	       int a=obj.add(9,5);
+	       int b=obj.sub(5,3);
+	       int c=obj.mul(8,5);
+	       int d=obj.div(5,3);
+	       System.out.println(a+" "+b+" "+c+" "+d);
+	}
+}
