@@ -1,0 +1,49 @@
+
+METHOD OVERRIDING  :-
+1)
+
+class A{
+    public void show(){
+        System.out.println("I am in class A");
+    }
+    public void config(){
+        System.out.println("I am A config");
+    }
+}
+class B extends A{
+    public void show(){
+        System.out.println("I am in class B");
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    B obj=new B();
+	    obj.show();
+	   // obj.config();
+	    
+	}
+}
+
+
+
+2)
+
+class A{
+    public int add(int n1,int n2){
+        return n1+n2;
+    }
+}
+class B extends A{
+    public int add(int n1,int n2){
+        return n1+n2+1;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		B obj=new B();
+		System.out.println(obj.add(4,5));
+	}
+}
+
