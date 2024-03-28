@@ -22,3 +22,30 @@ public class Main
 		obj.show();
 	}
 }
+
+
+
+
+
+
+abstract class A{
+    int a=6;
+    public void show(){
+        System.out.println("Show is in A class");
+    }
+    
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+		A obj=new A(){
+		     public void show(){
+        System.out.println("Show is in B new  class");
+    }
+		};
+	
+		obj.show();
+	}
+}
+
