@@ -37,3 +37,75 @@ public class Main
 
 
 
+
+
+LAMBDA EXPRESSION  with no parameter
+
+interface A{
+    void fun();
+}
+public class Main
+{
+	public static void main(String[] args) {
+		A obj = () -> System.out.println("Hellow Everyone");
+		    
+		
+		obj.fun();
+		
+	}
+}
+
+
+LAMBDA EXPRESSION  with one parameter
+
+interface A{
+    void fun(int i);
+}
+public class Main
+{
+	public static void main(String[] args) {
+		A obj = (int i) -> System.out.println("Hellow Everyone"+ 2*i);
+		    
+		
+		obj.fun(12);
+		
+	}
+}
+
+
+
+WITH TWO PARAMETRER
+
+interface A{
+    void fun(int i,int j);
+}
+public class Main
+{
+	public static void main(String[] args) {
+		A obj = (int i,int j) -> System.out.println("Hellow Everyone"+ (2*i+j));
+		    
+		
+		obj.fun(12,34);
+		
+	}
+}
+
+
+
+interface A{
+    void fun(int i,int j);
+}
+public class Main
+{
+	public static void main(String[] args) {
+		A obj = (int i,int j) -> {System.out.println("Hellow Everyone"+ (2*i+j));
+		System.out.println("Hellow Everyone"+ (2*i*0+j));
+			System.out.println("Hellow Everyone"+ (2*i+j*i));
+		};
+		    
+		
+		obj.fun(12,34);
+		
+	}
+}
+
