@@ -1,0 +1,39 @@
+@FunctionalInterface
+interface A{
+    void fun();
+    // It will throw an errror since, functional interface has only one method
+    // void help();
+}
+class B implements A{
+    public void fun(){
+        System.out.println("Let's have fun today");
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		B obj=new B();
+		obj.fun();
+	}
+}
+
+ALTERNATE WAY OF DOING IT USING ANONYAMUS CLASSS
+
+interface A{
+    void fun();
+}
+public class Main
+{
+	public static void main(String[] args) {
+		A obj=new A(){
+		    public void fun(){
+		        System.out.println("Hellow Everyone");
+		    }
+		};
+		obj.fun();
+		
+	}
+}
+
+
+
