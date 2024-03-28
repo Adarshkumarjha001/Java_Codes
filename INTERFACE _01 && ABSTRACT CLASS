@@ -121,3 +121,21 @@ public class Main
 		obj.m2();
 	}
 }
+
+
+
+interface A{
+    abstract void help();
+}
+class B implements A{
+    public void help(){
+        System.out.println("I request help from class A");
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		B obj=new B();
+		obj.help();
+	}
+}
