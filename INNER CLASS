@@ -1,5 +1,5 @@
 
-
+NON STATIC CLASS
 
 
 class A{
@@ -22,3 +22,32 @@ public class Main
 		obj.show();
 	}
 }
+
+
+STATIC CLASS
+
+
+class A{
+    int a=6;
+    public void show(){
+        System.out.println("Show is in A class");
+    }
+    static class B{
+        public void fun(){
+            System.out.println("Fun in class B");
+        }
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		A obj=new A();
+		A.B obj1=new A.B();
+		obj1.fun();
+		obj.show();
+	}
+}
+
+
+
+
