@@ -24,6 +24,31 @@ public class Main
 }
 
 
+abstract class A{
+    
+    abstract public void show();
+    abstract public void fun();
+       
+    
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+		A obj=new A(){
+		     public void show(){
+        System.out.println("Show is in B new  class");
+    }
+    public void fun(){
+        System.out.println("fun is in B new  class");
+    }
+		};
+	
+		obj.show();
+		obj.fun();
+	}
+}
+
 
 
 
