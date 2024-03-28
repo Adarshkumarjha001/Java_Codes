@@ -1,0 +1,123 @@
+
+
+
+
+interface A{
+    final int a=10;
+You are not supposed to give body in interface
+    void display();
+    //     System.out.println("heloow it's Friday today");
+    // }
+}
+interface C{
+    final int x=98;
+    void run();
+}
+class B implements A,C{
+    public void display(){
+        System.out.println("Good morning everyone");
+    }
+    public void run(){
+        System.out.println("I am running");
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		B obj=new B();
+		obj.display();
+		obj.run();
+		System.out.println(obj.a);
+		System.out.println(obj.x);
+	}
+}
+
+
+
+
+interface A{
+    final int a=78;
+    default void display(){
+        System.out.println("I a in class A");
+    }
+}
+interface B extends A{
+   default public void di(){
+        System.out.println("Heloow i");
+    }
+}
+class C implements A,B{
+int c=90;
+}
+public class Main
+{
+	public static void main(String[] args) {
+		C obj=new C();
+		obj.display();
+	    obj.di();
+		System.out.println(obj.a);
+		System.out.println(obj.c);
+	}
+}
+
+
+
+
+
+abstract class A{
+    abstract void Information();
+}
+class B extends A{
+    public void Information(){
+        String s="Adarsh";
+        int age=21;
+        String add="Lpu";
+        System.out.println(s);
+        System.out.println(age);
+        System.out.println(add);
+        
+}
+}
+public class Main
+{
+	public static void main(String[] args) {
+		B obj=new B();
+		obj.Information();
+	}
+}
+
+
+
+
+abstract class A{
+    abstract void In();
+        
+    
+     void Information(){
+        System.out.println("Hellow world");
+    }
+}
+class B extends A{
+    void In(){
+        String s="Adarsh";
+        int age=21;
+        String add="Lpu";
+        System.out.println(s);
+        System.out.println(age);
+        System.out.println(add);
+        
+        
+}
+    void m2(){
+        System.out.println("i am in class B");
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		B obj=new B();
+		obj.Information();
+		obj.In();
+		obj.m2();
+	}
+}
