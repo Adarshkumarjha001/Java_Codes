@@ -24,7 +24,7 @@ public class Main
 }
 
 
-STATIC CLASS
+STATIC CLASS:-  It can be made only on inner class an outer class can only be public ,final and abstract
 
 
 class A{
