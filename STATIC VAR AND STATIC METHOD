@@ -1,0 +1,19 @@
+class WIN{
+    public static int a=89;
+    public static void get(String name,int age){
+        System.out.println("My name is "+name+" My age is: "+age);
+    }
+    public void set(String name,int age){
+        System.out.println("My name is "+name+" My age is: "+age);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    WIN obj=new WIN();
+	    obj.get("Ads",12);
+	  WIN.get("Adarsh",21);
+	  System.out.println(WIN.a);
+
+	}
+}
