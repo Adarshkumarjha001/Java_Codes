@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+
+ HashMap<String,Integer> m =new HashMap<>();
+ m.put("eng",50);
+ m.put("math",70);
+ m.put("hindi",40);
+ m.put("Sanskrit",89);
+// 	System.out.println(m.containsKey("bio"));
+	System.out.println(m.size());
+// 	System.out.println(m);
+	}
+}
