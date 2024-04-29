@@ -61,4 +61,38 @@ public class Main
 }
 
 
+LENGTH OF LINE :
+
+import java.io.*;
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    try{
+	        String s=sc.nextLine();
+	        File file=new File(s);
+	        FileReader fr=new FileReader(file);
+	        BufferedReader br=new BufferedReader(fr);
+	        String line;
+	        int tline=0;
+	        int length=(int)file.length();
+	        System.out.println(length);
+	        int tchar=0;
+	        while((line=br.readLine())!=null){
+	            tline++;
+	            tchar+=line.length();
+	        }
+	        System.out.println(tline);
+	         System.out.println(tchar);
+	        
+	        
+	    }
+	    catch(Exception e){
+	        System.out.println("Error has occured");
+	    }
+		
+	}
+}
+
 
