@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    try{
+	        String s=sc.nextLine();
+	        File file=new File(s);
+	        FileReader fr=new FileReader(file);
+	        BufferedReader br=new BufferedReader(fr);
+	        String line;
+	        String longword="";
+	        while((line=br.readLine())!=null){
+	            String[] word=line.split("\\s");
+	            for(String words: word){
+	                if(words.length()>longword.length()){
+	                    longword=words;
+	                }
+	            }
+	            System.out.println(longword);
+	            
+	        }
+	    }
+	    catch(Exception e){
+	        System.out.println("Error has occured");
+	    }
+		
+	}
+}
