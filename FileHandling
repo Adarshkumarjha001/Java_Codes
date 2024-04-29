@@ -128,3 +128,35 @@ public class Main
 		
 	}
 }
+
+
+PRINT THE FILE FROM BUTTON TO UP
+
+import java.io.*;
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    try{
+	       String s=sc.nextLine();
+	       File file=new File(s);
+	       FileReader fr=new FileReader(file);
+	       BufferedReader br=new BufferedReader(fr);
+	       String line;
+	       List<String> lists=new ArrayList<>();
+	       while((line=br.readLine())!=null){
+	           lists.add(line);
+	       }
+	       for(int i=lists.size()-1;i>=0;i--){
+	           System.out.println(lists.get(i));
+	       }
+	        
+	    }
+	    catch(Exception e){
+	        System.out.println("Error has occured");
+	    }
+		
+	}
+}
+
