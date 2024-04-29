@@ -160,3 +160,37 @@ public class Main
 	}
 }
 
+
+APPEND INSIDE FILE
+
+import java.io.*;
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    try{
+	      String s=sc.nextLine();
+	      File file=new File(s);
+	      FileWriter fw=new FileWriter(file,true);
+	      String text=sc.nextLine();
+	      fw.write("\n"+text);
+	      
+	      
+	      FileReader fr=new FileReader(file);
+	      BufferedReader br=new BufferedReader(fr);
+	      String line;
+	      while((line=br.readLine())!=null){
+	          System.out.println(line);
+	      }
+	        
+	    }
+	    catch(Exception e){
+	        System.out.println("Error has occured");
+	    }
+	    finally{
+	        System.out.println("Good Morning");
+	    }
+		
+	}
+}
